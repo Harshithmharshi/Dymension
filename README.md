@@ -1,6 +1,5 @@
-# Project Title
+# Dymension News Card Tasks
 
-Dymension News Card Tasks
 
 ## Getting Started
 
