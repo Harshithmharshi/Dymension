@@ -1,0 +1,1 @@
+export const BASEURL="http://newsapi.org/v2/everything?q=bitcoin&from=2020-07-16&sortBy=publishedAt&apiKey=d6916aa69676422bb454ad15fddb2e4c"

@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: stretch;
+    padding-top: 2%;
+    align-items: stretch;
+}
+
+.categoryName {
+    border: 0.5px solid lightcoral;
+    border-radius: 30px;
+    padding: 13px;
+    color: red
+}
+
+.categoryName:nth-child(5) {
+    border: 1.3px solid red;
+}
+
+.categoryName:hover {
+    border: 1.3px solid red;
+}
