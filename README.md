@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Dymensions Task
+
+This project consists of category names of news reader and news info in card styles using Function Component in React Hooks.
 
 ## Available Scripts
 
