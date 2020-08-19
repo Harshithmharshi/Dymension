@@ -14,12 +14,12 @@ function Card({newsData}) {
                             <p>{item.description}</p>
                         </div>
                         <div className={styled.footer}>
-                        <p style={{color:'red'}}><b>{item.source.name}</b></p>
-                        <p><span>{item.publishedAt}</span><span style={{marginLeft:'60px'}}>more ...</span></p>
+                        <p style={{color:'red'}}><b>{item.author}</b></p>
+                        <p><span>{item.publishedAt}</span><a href={item.url} target="_blank" rel="noopener noreferrer" style={{textDecoration:'none',color:'black'}}><span style={{marginLeft:'60px'}}>more ...</span></a></p>
                         </div>
                     </div>
                 )
-            }):'NO DATA FOUND'}
+            }):'Please select any of the Category Name'}
 
         </div>
     )
