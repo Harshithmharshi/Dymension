@@ -1,10 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import styled from "../styles/category.module.css";
 import Card from "./Card";
 
 
 function Categroy({ categoryData }) {
     const [newsCard, setNewsCard] = useState([]);
+
+
+    useEffect(()=>{
+        setNewsCard(categoryData);
+    },[categoryData])
+
 
 
     const sendNewsCard = (e,category_name) => {
