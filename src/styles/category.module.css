@@ -1,20 +1,21 @@
 .container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-content: stretch;
-    padding-top: 2%;
-    align-items: stretch;
+    justify-content: flex-start;
+    flex-wrap: wrap;    
+    margin-bottom: 50px;
 }
 
 .categoryName {
+    justify-content: space-between;
     border: 0.5px solid lightcoral;
     border-radius: 30px;
     padding: 13px;
-    color: red
+    color: red;
+    outline: none;
+    margin:2% 2% 0% 2%;
 }
 
-.categoryName:nth-child(5) {
+.categoryName:focus {
     border: 1.3px solid red;
 }
 
