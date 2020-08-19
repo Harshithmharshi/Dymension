@@ -4,11 +4,9 @@ import "./App.css"
 import { BASEURL } from "./URL";
 /* Components*/
 const Category = React.lazy(() => import('./Components/Category'));
-const Card = React.lazy(() => import('./Components/Card'));
 
 
 function App() {
-  const [newsData, setNewsData] = useState([]);
   const [categoryData, setCategoryData] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -19,8 +17,7 @@ function App() {
       .then((response) => {
         setLoading(true);
         console.log(response.data);
-        setNewsData(response.data.articles);
-        setCategoryData(response.data.articles.slice(0, 7))
+        setCategoryData(response.data.articles)
       })
       .catch((err) => {
         console.log(err);
@@ -33,7 +30,6 @@ function App() {
       {loading ?
         <Suspense fallback={<div className="loading"></div>}>
           <Category categoryData={categoryData} />
-          <Card newsData={newsData} />
         </Suspense>
         : <div className="loading">Loading...</div>}
     </div>
