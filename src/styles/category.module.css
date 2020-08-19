@@ -7,18 +7,18 @@
 
 .categoryName {
     justify-content: space-between;
-    border: 0.5px solid lightcoral;
+    border: 0.5px solid #ffcccc;
     border-radius: 30px;
     padding: 13px;
-    color: red;
+    color: #ff3333;
     outline: none;
     margin:2% 2% 0% 2%;
 }
 
 .categoryName:focus {
-    border: 1.3px solid red;
+    border: 1.3px solid #ff3333;
 }
 
 .categoryName:hover {
-    border: 1.3px solid red;
+    border: 1.3px solid #ff3333;
 }
